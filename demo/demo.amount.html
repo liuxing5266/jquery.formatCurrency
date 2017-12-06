@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../lib/jquery-1.10.2.js"></script>
+    <script src="../bin/jquery.formatCurrency-2.js"></script>
+</head>
+<body>
+<input type="text" id="amount" name="amount" onchange="getAmountView()"/>
+<label>金额:</label><label id="amountView"></label>
+</body>
+</html>
+<script>
+    function getAmountView() {
+        $("#amountView").html($("#amount").val()).formatCurrency();
+    }
+</script>
